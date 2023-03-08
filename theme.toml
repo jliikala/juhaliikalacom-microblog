@@ -1,0 +1,12 @@
+name = "Juha Liikala dot com"
+license = "MIT"
+licenselink = "https://github.com/jliikala/juhaliikalacom-microblog/blob/main/LICENSE.md"
+description = "A Micro.blog Hugo theme for juhaliikala.com"
+homepage = "https://github.com/jliikala/juhaliikalacom-microblog"
+tags = ["blog", "minimal", "two-column", "classic", "header", "footer"]
+features = ["blog", "newsletter"]
+min_version = "0.91.0"
+
+[author]
+  name = "Juha Liikala"
+  homepage = "https://juhaliikala.com"

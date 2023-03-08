@@ -1,2 +1,2 @@
-# juhaliikalacom-microblog
-juhaliikala.com on micro.blog
+# micro.blog theme for juhaliikala.com
+This is a micro.blog (Hugo) theme for juhaliikala.com.
