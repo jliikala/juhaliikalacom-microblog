@@ -1,0 +1,52 @@
+{
+	"version": "1.0.0",
+	"title": "Micro.blog theme for juhaliikala.com",
+	"description": "This site runs on micro.blog theme, originally made for juhaliikala.com",
+	"fields": [
+		{
+			"field": "params.twitter",
+			"label": "Twitter",
+			"placeholder": "Your Twitter username"
+		},
+    {
+			"field": "params.medium",
+			"label": "Medium",
+			"placeholder": "Your Medium username"
+		},
+    {
+			"field": "params.mastodon",
+			"label": "Mastodon",
+			"placeholder": "Your Mastodon username"
+		},
+    {
+			"field": "params.linkedin",
+			"label": "LinkedIn",
+			"placeholder": "Your LinkedIn username"
+		},
+    {
+			"field": "params.tumblr",
+			"label": "Tumblr",
+			"placeholder": "Your Tumblr username"
+		},
+    {
+			"field": "params.flickr",
+			"label": "Flickr",
+			"placeholder": "Your Flickr username"
+		},
+		{
+			"field": "params.instagram",
+			"label": "Instagram",
+			"placeholder": "Your Instagram username"
+		},
+		{
+			"field": "params.microdotblog",
+			"label": "Micro.blog",
+			"placeholder": "Your Micro.blog username"
+		},
+    {
+			"field": "params.sitelang",
+			"label": "Site language",
+			"placeholder": "Set site wide language code here, default is en"
+		}
+	]
+}
