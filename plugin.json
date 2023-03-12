@@ -16,7 +16,7 @@
     {
 			"field": "params.mastodon",
 			"label": "Mastodon",
-			"placeholder": "Your Mastodon username"
+			"placeholder": "Your Mastodon host plus username"
 		},
     {
 			"field": "params.linkedin",
@@ -47,6 +47,11 @@
 			"field": "params.sitelang",
 			"label": "Site language",
 			"placeholder": "Set site wide language code here, default is en"
+		},
+    {
+			"field": "params.sitelang",
+			"label": "Enable micro.blog newsletter forms on sidebar and elsewhere",
+      "type": "boolean"
 		}
 	]
 }
