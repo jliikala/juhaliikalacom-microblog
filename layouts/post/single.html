@@ -1,9 +1,9 @@
 {{ define "main" }}
 <section class="post-content">
-  {{ $first_image := index (.Page.Resources.Match "*.jpg") 0 }}
+  {{- with $.Params.images -}}
   <figure class="cover-image">
     <img
-      src="{{ $first_image.RelPermalink }}"
+      src="{{ index . 0 | absURL }}"
       alt="Post cover image for {{ .Title }}"
       loading="lazy">
   </figure>
