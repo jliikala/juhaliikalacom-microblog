@@ -3,11 +3,6 @@
 	"title": "Micro.blog theme for juhaliikala.com",
 	"description": "This site runs on micro.blog theme, originally made for juhaliikala.com",
 	"fields": [
-		{
-			"field": "params.twitter",
-			"label": "Twitter",
-			"placeholder": "Your Twitter username"
-		},
     {
 			"field": "params.medium",
 			"label": "Medium",
@@ -23,16 +18,6 @@
 			"label": "LinkedIn",
 			"placeholder": "Your LinkedIn username"
 		},
-    {
-			"field": "params.tumblr",
-			"label": "Tumblr",
-			"placeholder": "Your Tumblr username"
-		},
-    {
-			"field": "params.flickr",
-			"label": "Flickr",
-			"placeholder": "Your Flickr username"
-		},
 		{
 			"field": "params.instagram",
 			"label": "Instagram",
@@ -47,11 +32,6 @@
 			"field": "params.sitelang",
 			"label": "Site language",
 			"placeholder": "Set site wide language code here, default is en"
-		},
-    {
-			"field": "params.sitelang",
-			"label": "Enable micro.blog newsletter forms on sidebar and elsewhere",
-      "type": "boolean"
 		}
 	]
 }
