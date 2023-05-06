@@ -23,6 +23,17 @@
     <link rel="EditURI" type="application/rsd+xml" href="{{ "rsd.xml" | absURL }}" />
   {{ end -}}
 
+  <!-- Misc -->
+  {{ if or hugo.IsProduction (eq site.Params.env "production") }}
+  <!---->
+  {{ template "_internal/opengraph.html" . }}
+  <!---->
+  {{ template "_internal/schema.html" . }}
+  <!---->
+  {{ template "_internal/twitter_cards.html" . }}
+  <!---->
+  {{ end }}
+
   <link rel="me" href="https://micro.blog/{{ .Site.Author.username }}" />
 
   {{ with .Site.Params.medium_username }}

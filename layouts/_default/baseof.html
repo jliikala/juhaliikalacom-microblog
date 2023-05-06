@@ -3,12 +3,19 @@
   {{ partial "head.html" . }}
   <body>
     <div class="wrapper">
-      <main class="page">
-        {{ block "main" . }}{{ end }}
-      </main>
-      <aside class="side">
-        <p>Sidebar content coming soon.</p>
-      </aside>
+      {{ partial "header.html" . }}
+      <div class="home">
+        <main class="page">
+          {{ block "main" . }}{{ end }}
+        </main>
+        <aside class="side">
+          {{ partial "bio.html" . }}
+          {{ partial "asidenav.html" . }}
+        </aside>
+      </div>
     </div>
+    {{ range .Site.Params.plugins_js }}
+			<script src="{{ . }}"></script>
+		{{ end }}
   </body>
 </html>
