@@ -2,12 +2,13 @@
 <section class="post-content">
   {{- with $.Params.images and -}}
     {{ with .Title }}
-  <figure class="cover-image">
-    <img
-      src="{{ index . 0 | absURL }}"
-      alt="Post cover image"
-      loading="lazy">
-  </figure>
+    <figure class="cover-image">
+      <img
+        src="{{ index . 0 | absURL }}"
+        alt="Post cover image"
+        loading="lazy">
+    </figure>
+    {{ end }}
   {{ end -}}
   <article class="h-entry post">
     <header>

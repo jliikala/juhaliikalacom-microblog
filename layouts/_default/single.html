@@ -1,13 +1,14 @@
 {{ define "main" }}
 <section class="post-content">
   {{- with $.Params.images -}}
-    {{ with .Title }}
-  <figure class="cover-image">
-    <img
-      src="{{ index . 0 | absURL }}"
-      alt="Post cover image"
-      loading="lazy">
-  </figure>
+    {{ if .Title }}
+    <figure class="cover-image">
+      <img
+        src="{{ index . 0 | absURL }}"
+        alt="Post cover image for {{ .Title }}"
+        loading="lazy">
+    </figure>
+    {{ end }}
   {{ end -}}
   <article class="h-entry post">
     <header>
