@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="post-content">
-  {{- with $.Params.images -}}
+  {{- with $.Params.images and .Title -}}
   <figure class="cover-image">
     <img
       src="{{ index . 0 | absURL }}"
