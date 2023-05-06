@@ -1,10 +1,11 @@
 {{ define "main" }}
 <section class="post-content">
-  {{- with $.Params.images and .Title -}}
+  {{- with $.Params.images -}}
+    {{ with .Title }}
   <figure class="cover-image">
     <img
       src="{{ index . 0 | absURL }}"
-      alt="Post cover image for {{ .Title }}"
+      alt="Post cover image"
       loading="lazy">
   </figure>
   {{ end -}}
