@@ -2,11 +2,13 @@
 <html lang="en">
   {{ partial "head.html" . }}
   <body>
-    <main class="page">
-      {{ block "main" . }}{{ end }}
-    </main>
-    <aside class="side">
-      <p>Sidebar content coming soon.</p>
-    </aside>
+    <div class="wrapper">
+      <main class="page">
+        {{ block "main" . }}{{ end }}
+      </main>
+      <aside class="side">
+        <p>Sidebar content coming soon.</p>
+      </aside>
+    </div>
   </body>
 </html>
