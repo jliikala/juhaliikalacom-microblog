@@ -27,9 +27,7 @@
     </section>
     {{ with .Title }}
     <div class="post-meta">
-      <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
-        <span class="dates" href="{{ .Permalink }}">{{ .Date.Format "Jan 2, 2006" }}</span>
-      </time>
+      <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}" class="dt-published">→ {{ .Date.Format "3:04 PM, Jan 2" }}</time>
     </div>
     {{ end }}
   </article>
