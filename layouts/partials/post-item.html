@@ -2,9 +2,14 @@
   {{ if .Title }}
   {{ $first_image := index (.Page.Resources.Match "*.jpg") 0 }}
   <a class="cover-link" href="{{ .Permalink }}">
-    <figure class="cover-image">
-      <img class="cover-image" src="{{ $first_image.RelPermalink }}" />
-    </figure>
+    {{- with $.Params.images -}}
+      <figure class="cover-image">
+        <img
+          src="{{ index . 0 | absURL }}"
+          alt="Post cover image"
+          loading="lazy">
+      </figure>
+    {{ end -}}
   </a>
   <article class="mb-5">
     <header>

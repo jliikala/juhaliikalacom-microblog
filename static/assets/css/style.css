@@ -328,6 +328,10 @@ time {
   margin: 0 auto;
 }
 
+.pagination {
+  text-align: center;
+}
+
 /* Home layout */
 
 .home {
@@ -570,6 +574,10 @@ article a {
 
 .post-title a {
   color: #fff !important;
+}
+
+.post-title time {
+  font-family: var(--font-stack-sans) !important;
 }
 
 /* Post spesifics */
@@ -845,10 +853,6 @@ article blockquote {
   }
   .post-content {
     background-color: #fff;
-  }
-
-  .top-navigation {
-    color: var(--text-color-light);
   }
 
   aside h3 {
