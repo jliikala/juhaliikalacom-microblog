@@ -14,16 +14,24 @@
     <header>
     {{ with .Title }}
       <h1 class="p-name post-title">{{ . }}</h1>
-      {{ end }}
-      <h2 class="headline post-title">
+    {{ else }}
+      <h2 class="headline p-name post-title">
         <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
           <span class="dates" href="{{ .Permalink }}">{{ .Date.Format "Jan 2, 2006" }}</span>
         </time>
       </h2>
+      {{ end }}
     </header>
     <section class="e-content post-body">
         {{ .Content }}
     </section>
+    {{ with .Title }}
+    <div class="post-meta">
+      <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
+        <span class="dates" href="{{ .Permalink }}">{{ .Date.Format "Jan 2, 2006" }}</span>
+      </time>
+    </div>
+    {{ end }}
   </article>
 </section>
 
