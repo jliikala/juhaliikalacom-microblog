@@ -1,6 +1,5 @@
 <section class="post-content">
   {{ if .Title }}
-  {{ $first_image := index (.Page.Resources.Match "*.jpg") 0 }}
   <a class="cover-link" href="{{ .Permalink }}">
     {{- with $.Params.images -}}
       <figure class="cover-image">

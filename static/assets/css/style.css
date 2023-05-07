@@ -818,7 +818,11 @@ article blockquote {
   }
 
   .mobile-nav {
-    display:block;
+    display: block;
+  }
+
+  .page article p {
+    font-size: 1.8rem;
   }
 }
 
