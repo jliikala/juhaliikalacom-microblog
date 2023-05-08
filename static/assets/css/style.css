@@ -377,6 +377,13 @@ aside h3 {
   font-weight: 400;
 }
 
+.photo-grid {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 33% 33% 33%;
+}
+
 /* Post & page contents */
 
 figure {
