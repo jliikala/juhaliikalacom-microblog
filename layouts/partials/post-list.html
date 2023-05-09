@@ -1,8 +1,8 @@
 <ul id="post-list">
   {{ if or .IsHome .Site.Params.paginate_categories }}
       {{ range first 1 .Site.Taxonomies.categories.featured }}
-      {{ partial "featured-post-item.html" . }}
-    {{ end }}
+        {{ partial "featured-post-item.html" . }}
+      {{ end }}
     {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") }}
     {{ $list := $paginator.Pages }}
     {{ range $list  }}
