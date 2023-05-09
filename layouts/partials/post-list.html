@@ -3,16 +3,11 @@
     {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") }}
     {{ $list := $paginator.Pages }}
     {{ range $list  }}
-        <small>j</small>
-        {{ range first 1 .Site.Taxonomies.categories.featured }}
-          {{ partial "featured-post-item.html" . }}
-        {{ end }}
       {{ partial "post-item.html" . }}
     {{ end }}
   {{ else }}
     {{ $list := where .Pages.ByDate.Reverse "Type" "post" }}
     {{ range $list  }}
-      <small>k</small>
       {{ partial "post-item.html" . }}
     {{ end }}
   {{ end }}

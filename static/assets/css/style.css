@@ -767,6 +767,12 @@ article blockquote {
   color: #ca2017
 }
 
+.is-featured {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 /* Spacing */
 
 .mt-1 { margin-top: 1rem !important; }
