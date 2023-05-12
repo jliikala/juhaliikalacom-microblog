@@ -17,11 +17,16 @@
   <link rel="stylesheet" href="{{ "custom.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
 
-  {{ if .RSSLink -}}
-    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link rel="alternate" type="application/json" title="{{ .Site.Title }}" href="{{ "feed.json" | absURL }}" />
-    <link rel="EditURI" type="application/rsd+xml" href="{{ "rsd.xml" | absURL }}" />
+  {{- with .OutputFormats.Get "RSS" -}}
+  <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}"  href="{{ .RelPermalink }}"/>
+  {{- with $.Site.Params.podcast_title }}
+  <link rel="alternate" type="application/rss+xml" title="{{ . }}"  href="{{ "podcast.xml" | absURL }}" />
+  {{ else }}
+  <link rel="alternate" type="application/rss+xml" title="Podcast" href="{{ "podcast.xml" | absURL }}" />
   {{ end -}}
+  <link rel="alternate" type="application/json" title="{{ $.Site.Title }}" href="{{ "feed.json" | absURL }}" />
+  <link rel="EditURI" type="application/rsd+xml" href="{{ "rsd.xml" | absURL }}" />
+  {{- end -}}
 
   <!-- Misc -->
   {{ if or hugo.IsProduction (eq site.Params.env "production") }}
@@ -36,7 +41,7 @@
   <link rel="me" href="https://www.linkedin.com/in/juhaliikala" />
   <link rel="me" href="https://me.dm/@juhaliikala" />
   <link rel="me" href="https://www.instagram.com/nomadcouch/" />
-	
+
   <link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth" />
   <link rel="token_endpoint" href="https://micro.blog/indieauth/token" />
   <link rel="micropub" href="https://micro.blog/micropub" />
