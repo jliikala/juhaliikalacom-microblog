@@ -1,10 +1,10 @@
 {{ define "main" }}
 <section class="posts" id="post-list">
   {{ if or .IsHome .Site.Params.paginate_categories }}
-    {{ $posts := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") }}
-    {{ $hidden_posts := where $posts "Params.categories" "intersect" (slice "featured") }}
-    {{ $posts = $posts | symdiff $hidden_posts }}
-    {{ $list := $posts.Pages }}
+    {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") }}
+    {{ $hidden_posts := where $paginator "Params.categories" "intersect" (slice "featured") }}
+    {{ $paginator = $paginator | symdiff $hidden_posts }}
+    {{ $list := $paginator.Pages }}
     {{ if .Site.Taxonomies.categories.featured }}
       {{ range first 1 .Site.Taxonomies.categories.featured }}
         {{ partial "featured-post-item.html" . }}
