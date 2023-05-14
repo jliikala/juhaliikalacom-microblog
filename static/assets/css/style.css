@@ -360,18 +360,18 @@ time {
   line-height: 3.2rem;
 }
 
-.home aside {
+.home .side {
   font-size: 90%;
   display: flex;
   flex-direction: column;
   padding-bottom: 3rem;
 }
 
-.home aside strong {
+.home .side strong {
   color: #fff;
 }
 
-aside h3 {
+.side h3 {
   font-size: 1.8rem;
   font-family: var(--font-stack-mono);
   font-weight: 400;
@@ -607,7 +607,7 @@ article a {
   border: 1px solid #262626;
 }
 
-main, aside {
+main, .side {
   color: var(--text-color);
 }
 
@@ -618,7 +618,7 @@ main, aside {
   margin: 0 auto;
 }
 
-article p, .bio p, aside p {
+article p, .bio p, .side p {
   margin-bottom: 1.5rem;
 }
 
@@ -718,21 +718,21 @@ article p:last-of-type, .bio p:last-of-type {
   margin-top: 4rem;
 }
 
-.aside-nav {
+.side-nav {
   padding: 0;
 }
 
-.aside-nav li {
+.side-nav li {
   margin-bottom: 1rem;
 }
 
-.aside-nav li a {
+.side-nav li a {
   text-transform: uppercase;
   align-items: center;
   display: flex;
 }
 
-.aside-nav li a svg {
+.side-nav li a svg {
   margin-right: 1rem;
 }
 
@@ -819,7 +819,7 @@ article blockquote {
   .site-header .top-navigation {
     width: 95% !important;
   }
-  .page .post-content article, aside.side, footer.site-footer {
+  .page .post-content article, .side, footer.site-footer {
     width: 90% !important;
     margin: 0 auto;
   }
@@ -875,7 +875,7 @@ article blockquote {
     background-color: #fff;
   }
 
-  aside h3 {
+  .side h3 {
     color: var(--text-color);
   }
 

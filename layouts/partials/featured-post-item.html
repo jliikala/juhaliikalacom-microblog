@@ -1,4 +1,4 @@
-<section class="post-content featured-post">
+<article class="post-content featured-post">
   {{ if .Title }}
   <a class="cover-link" href="{{ .Permalink }}">
     {{- with $.Params.images -}}
@@ -10,7 +10,7 @@
       </figure>
     {{ end -}}
   </a>
-  <article class="mb-5">
+  <div class="mb-5">
     <header>
       <h2 class="post-title">
         <a href="{{ .Permalink }}">
@@ -20,7 +20,7 @@
     </header>
     {{ .Content }}
   {{ else }}
-  <article class="mb-5">
+  <div class="mb-5">
   {{ .Content }}
   {{ end }}
     <div class="post-meta">
@@ -32,5 +32,5 @@
         Featured post
       </span>
     </div>
-  </article>
-</section>
+  </div>
+</article>

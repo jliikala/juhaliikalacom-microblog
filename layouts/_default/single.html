@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="post-content">
+<article class="post-content">
   {{- with $.Params.images -}}
     {{ if .Title }}
     <figure class="cover-image">
@@ -10,13 +10,13 @@
     </figure>
     {{ end }}
   {{ end -}}
-  <article class="h-entry post">
+  <div class="h-entry post">
     <header>
       <h1 class="p-name page-title">{{ .Title }}</h1>
     </header>
     <section class="e-content post-body">
         {{ .Content }}
     </section>
-  </article>
-</section>
+  </div>
+</article>
 {{ end }}

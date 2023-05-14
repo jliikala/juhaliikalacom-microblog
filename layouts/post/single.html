@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="post-content">
+<article class="post-content">
   {{ if .Title}}
     {{- with $.Params.images -}}
       <figure class="cover-image">
@@ -10,14 +10,14 @@
       </figure>
     {{ end -}}
   {{ end }}
-  <article class="h-entry post">
+  <div class="h-entry post">
     <header>
     {{ with .Title }}
       <h1 class="p-name post-title">{{ . }}</h1>
     {{ else }}
       <h2 class="headline p-name post-title">
         <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
-          <span class="dates" href="{{ .Permalink }}">{{ .Date.Format "Jan 2, 2006" }}</span>
+          <span class="dates">{{ .Date.Format "Jan 2, 2006" }}</span>
         </time>
       </h2>
       {{ end }}
@@ -30,8 +30,8 @@
       <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}" class="dt-published">→ {{ .Date.Format "3:04 PM, Jan 2" }}</time>
     </div>
     {{ end }}
-  </article>
-</section>
+  </div>
+</article>
 
   {{ if .Site.Params.include_conversation }}
   <section class="conversation">

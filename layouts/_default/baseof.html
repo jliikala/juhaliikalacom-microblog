@@ -8,10 +8,10 @@
         <main class="page">
           {{ block "main" . }}{{ end }}
         </main>
-        <aside class="side">
+        <div class="side">
           {{ partial "bio.html" . }}
-          {{ partial "asidenav.html" . }}
-        </aside>
+          {{ partial "sidenav.html" . }}
+        </div>
       </div>
     </div>
     {{ range .Site.Params.plugins_js }}
