@@ -1,4 +1,4 @@
-<article class="post-content">
+<article>
   {{ if .Title }}
   <a class="cover-link" href="{{ .Permalink }}">
     {{- with $.Params.images -}}
@@ -10,7 +10,7 @@
       </figure>
     {{ end -}}
   </a>
-  <div class="mb-5">
+  <div class="mb-5 post-content">
     <header>
       <h2 class="post-title">
         <a href="{{ .Permalink }}">
