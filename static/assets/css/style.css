@@ -355,7 +355,7 @@ time {
   font-size: 1.8rem;
 }
 
-.page article .post-content p {
+.page article p {
   font-size: 2rem;
   line-height: 3.2rem;
 }
@@ -409,7 +409,7 @@ figcaption {
   padding-top: 5rem;
 }
 
-article .post-content .post-meta {
+article .post-meta {
   margin-top: 2rem;
 }
 
@@ -567,11 +567,11 @@ h2, h3, h4, h5 {
 
 /* Lists */
 
-article .post-content ul {
+article ul {
   list-style: disc;
 }
 
-article .post-content ol {
+article ol {
   list-style: decimal;
   margin: 0 0 15px 0;
   padding: 0 0 0 25px;
@@ -596,7 +596,7 @@ article {
 
 /* Post spesifics */
 
-.post article .post-content, .post .subscribe {
+.post article, .post .subscribe {
   max-width: 70rem;
   margin: 0 auto;
 }
@@ -618,11 +618,11 @@ main, .side {
   margin: 0 auto;
 }
 
-article .post-content p, .bio p, .side p {
+article p, .bio p, .side p {
   margin-bottom: 1.5rem;
 }
 
-article .post-content img {
+article img {
   height: auto;
 }
 
@@ -638,7 +638,7 @@ article .post-content img {
   margin-bottom: 1rem;
 }
 
-article .post-content p:last-of-type, .bio p:last-of-type {
+article p:last-of-type, .bio p:last-of-type {
   margin-bottom: 0;
 }
 
@@ -837,7 +837,7 @@ article blockquote {
     display: block;
   }
 
-  .page article .post-content p {
+  .page article p {
     font-size: 1.8rem;
   }
 }
@@ -891,7 +891,7 @@ article blockquote {
     border: 1px solid #eaeaea;
   }
 
-  .posts article .post-content h3 a {
+  .posts article h3 a {
     color: var(--title-color-light) !important;
     border-bottom: none;
   }
@@ -934,11 +934,11 @@ article blockquote {
     font-family: var(--font-stack-mono);
   }
 
-  .page article .post-content h2 {
+  .page article h2 {
     margin: 4rem 0;
   }
 
-  .page article .post-content figure img {
+  .page article figure img {
     margin: 4rem 0;
   }
 
