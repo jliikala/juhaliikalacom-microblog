@@ -350,12 +350,12 @@ time {
   max-width: 823px;
 }
 
-.page article {
+.page article.post-content {
   font-family: var(--font-stack-serif);
   font-size: 1.8rem;
 }
 
-.page article p {
+.page article.post-content p {
   font-size: 2rem;
   line-height: 3.2rem;
 }
@@ -409,7 +409,7 @@ figcaption {
   padding-top: 5rem;
 }
 
-article .post-meta {
+article.post-content .post-meta {
   margin-top: 2rem;
 }
 
@@ -567,17 +567,17 @@ h2, h3, h4, h5 {
 
 /* Lists */
 
-article ul {
+article.post-content ul {
   list-style: disc;
 }
 
-article ol {
+article.post-content ol {
   list-style: decimal;
   margin: 0 0 15px 0;
   padding: 0 0 0 25px;
 }
 
-article a {
+article.post-content a {
   color: var(--accent-color-red) !important;
 }
 
@@ -596,7 +596,7 @@ article a {
 
 /* Post spesifics */
 
-.post article, .post .subscribe {
+.post article.post-content, .post .subscribe {
   max-width: 70rem;
   margin: 0 auto;
 }
@@ -611,18 +611,18 @@ main, .side {
   color: var(--text-color);
 }
 
-.page .post-content article {
+.page .post-content {
   width: 90%;
   max-width: 68rem;
   padding: 30px 0;
   margin: 0 auto;
 }
 
-article p, .bio p, .side p {
+article.post-content p, .bio p, .side p {
   margin-bottom: 1.5rem;
 }
 
-article img {
+article.post-content img {
   height: auto;
 }
 
@@ -638,7 +638,7 @@ article img {
   margin-bottom: 1rem;
 }
 
-article p:last-of-type, .bio p:last-of-type {
+article.post-content p:last-of-type, .bio p:last-of-type {
   margin-bottom: 0;
 }
 
@@ -736,7 +736,7 @@ article p:last-of-type, .bio p:last-of-type {
   margin-right: 1rem;
 }
 
-article blockquote {
+article.post-content blockquote {
   background-color: transparent;
   border: none;
   display: block;
@@ -819,7 +819,7 @@ article blockquote {
   .site-header .top-navigation {
     width: 95% !important;
   }
-  .page .post-content article, .side, footer.site-footer {
+  .page article.post-content, .side, footer.site-footer {
     width: 90% !important;
     margin: 0 auto;
   }
@@ -837,7 +837,7 @@ article blockquote {
     display: block;
   }
 
-  .page article p {
+  .page article.post-content p {
     font-size: 1.8rem;
   }
 }
@@ -879,11 +879,11 @@ article blockquote {
     color: var(--text-color);
   }
 
-  main article {
+  main article.post-content {
     color: var(--text-color-light);
   }
 
-  article a {
+  article.post-content a {
     color: #ca2017 !important;
   }
 
@@ -891,7 +891,7 @@ article blockquote {
     border: 1px solid #eaeaea;
   }
 
-  .posts article h3 a {
+  .posts article.post-content h3 a {
     color: var(--title-color-light) !important;
     border-bottom: none;
   }
@@ -934,11 +934,11 @@ article blockquote {
     font-family: var(--font-stack-mono);
   }
 
-  .page article h2 {
+  .page article.post-content h2 {
     margin: 4rem 0;
   }
 
-  .page article figure img {
+  .page article.post-content figure img {
     margin: 4rem 0;
   }
 
