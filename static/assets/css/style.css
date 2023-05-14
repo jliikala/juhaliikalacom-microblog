@@ -581,7 +581,7 @@ article .post-content a {
   color: var(--accent-color-red) !important;
 }
 
-.post-content {
+article {
   background-color: #1c1c1c;
   color: #cdcdcd;
 }
@@ -736,7 +736,7 @@ article .post-content p:last-of-type, .bio p:last-of-type {
   margin-right: 1rem;
 }
 
-article .post-content blockquote {
+article blockquote {
   background-color: transparent;
   border: none;
   display: block;
@@ -871,7 +871,7 @@ article .post-content blockquote {
   body {
     background-color: var(--bg-color);
   }
-  article .post-content {
+  article {
     background-color: #fff;
   }
 
