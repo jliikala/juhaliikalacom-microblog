@@ -689,4 +689,8 @@ article blockquote {
     border-color: white;
     color: black;
   }
+
+  .side svg {
+    stroke: rgba(255, 255, 255, 0.80);
+  }
 }
