@@ -681,7 +681,7 @@ article blockquote {
   .logo {
     border: 1px solid #ccc;
     color: #fff;
-    background: #transparent;
+    background: var(--bg-color-dark);
   }
 
   .logo:visited, .logo:active {
