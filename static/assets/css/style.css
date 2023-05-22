@@ -336,6 +336,8 @@ time {
   background: #000;
   border-color: #fff;
   color: #fff;
+  padding: 10px;
+  line-height: 1;
 }
 
 /* Home layout */
@@ -667,7 +669,7 @@ article blockquote {
   body {
     background-color: var(--bg-color-dark);
   }
-  article .post-content {
+  .page article {
     background-color: var(--post-bg-dark);
     color: var(--post-text-dark);
   }
@@ -675,8 +677,6 @@ article blockquote {
   .logo {
     border-color: #444;
     border: 1px solid #ccc;
-    padding: 10px;
-    line-height: 1;
     color: #fff;
   }
 
@@ -692,5 +692,9 @@ article blockquote {
 
   .side svg {
     stroke: rgba(255, 255, 255, 0.80);
+  }
+
+  .side {
+    color: var(--post-text-dark);
   }
 }
