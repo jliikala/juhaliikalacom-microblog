@@ -333,9 +333,9 @@ time {
 /* Site header */
 
 .logo {
-  background: #000;
-  border-color: #fff;
-  color: #fff !important;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  color: #111;
   padding: 10px;
   line-height: 1;
 }
@@ -679,9 +679,9 @@ article blockquote {
   }
 
   .logo {
-    border-color: #444;
     border: 1px solid #ccc;
     color: #fff;
+    background: #transparent;
   }
 
   .logo:visited, .logo:active {
