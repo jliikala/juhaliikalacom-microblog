@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="posts" id="post-list">
+<section class="post-list">
   {{ if or .IsHome .Site.Params.paginate_categories }}
   {{ $posts := where .Site.Pages.ByDate.Reverse "Type" "post" }}
   {{ $hidden_posts := where $posts "Params.categories" "intersect" (slice "featured") }}
