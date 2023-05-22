@@ -340,6 +340,16 @@ time {
   line-height: 1;
 }
 
+.logo:visited, .logo:active {
+  color: #111;
+}
+
+.logo:hover {
+  background: black;
+  border-color: black;
+  color: white;
+}
+
 /* Home layout */
 
 .home {
