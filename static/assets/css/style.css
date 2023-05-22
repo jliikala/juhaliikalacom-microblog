@@ -356,7 +356,7 @@ time {
   max-width: 823px;
 }
 
-article .post-content {
+.page article {
   background-color: var(--post-bg-light);
   color: var(--post-text-light);
 }
@@ -455,7 +455,7 @@ article .post-meta {
 
 .post-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 5rem;
 }
 
@@ -513,10 +513,6 @@ article .post-content a {
 .post article {
   max-width: 70rem;
   margin: 0 auto;
-}
-
-main, .side {
-  color: var(--text-color);
 }
 
 .page .post-content {
