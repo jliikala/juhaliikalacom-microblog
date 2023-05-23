@@ -669,6 +669,31 @@ article blockquote {
   font-size: 18px;
 }
 
+.archive-categories ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  padding: 0;
+}
+
+.full-posts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.full-posts-list li {
+  margin-bottom: 1rem;
+}
+
+.full-posts-list li:last-of-type {
+  margin-bottom: 0;
+}
+
+.full-posts-list li .dt-published {
+  font-family: var(--font-stack-mono);
+  font-size: 90%;
+}
+
 /* Spacing */
 
 .mt-1 { margin-top: 1rem !important; }
@@ -770,7 +795,7 @@ article blockquote {
   .side {
     color: var(--post-text-dark);
   }
-  
+
   .subscribe-form input[type="text"] {
     border: 1px solid var(--border-dark);
   }
