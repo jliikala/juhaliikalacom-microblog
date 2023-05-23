@@ -483,10 +483,14 @@ article .post-meta {
 }
 
 .page h1.page-title {
-  margin: 0 0 2rem;
+  margin-bottom: 2rem;
   font-size: 3rem;
   line-height: 1.2;
   font-weight: 700;
+}
+
+h2.post-title {
+  margin-bottom: 2rem;
 }
 
 /* Post list */
@@ -498,7 +502,7 @@ article .post-meta {
 }
 
 .post-list .post-title {
-  margin: 0 0 2rem;
+  margin-bottom: 2rem;
   font-size: 3rem;
   line-height: 1.2;
   font-weight: 700;
