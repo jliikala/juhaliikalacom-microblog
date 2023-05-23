@@ -381,11 +381,11 @@ time {
   font-size: 1.8rem;
 }
 
-.page article figure img {
+article figure img {
   margin: 4rem 0;
 }
 
-.page article figure.cover-image {
+article figure.cover-image img {
   margin: 0;
 }
 
