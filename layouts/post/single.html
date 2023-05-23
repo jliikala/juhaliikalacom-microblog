@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article>
+<article class="{{ range .Params.categories }} {{ . }}{{ end }}">
   {{ if .Title}}
     {{- with $.Params.images -}}
       <figure class="cover-image">

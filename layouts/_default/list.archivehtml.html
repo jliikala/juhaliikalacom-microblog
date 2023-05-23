@@ -1,0 +1,36 @@
+{{ define "main" }}
+<article>
+  <div class="h-entry post post-content">
+    <header>
+      <h1 class="p-name page-title">{{ .Title }}</h1>
+    </header>
+  {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+  {{ if gt (len $list) 0 }}
+  <div class="e-content post-body">
+    <div class="archive-categories">
+      <h3>Categories</h3>
+      <ul>
+        {{ range $list }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+    <div class="full-archives">
+      <h3>Full Post List</h3>
+      <ul class="full-posts-list">
+      {{ $list := (where .Site.Pages "Type" "post") }}
+      {{ range $list }}
+
+      <li class="h-entry">
+        <a href="{{ .Permalink }}" class="u-url"><span class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">{{ .Date.Format "Jan 2, 2006" }}</span></a>:
+        <span class="p-name"><b>{{ .Title }}</b></span>
+        <span class="p-summary">{{ .Summary | truncate 150 }}</span>
+      </li>
+
+      {{ end }}
+      </ul>
+    </div>
+  </div>
+</article>
+{{ end }}
