@@ -90,9 +90,10 @@
   --text-color-light: #111;
   --title-color: #fff;
   --title-color-light: #111;
-  --subtitle-color: antiquewhite;
-  --subtitle-color-light: #111;
+  --title-color-dark: antiquewhite;
   --article-link-color: antiquewhite;
+  --border-light: #e8e8e8;
+  --border-dark: #ccc;
   --article-link-color-light: rgb(102, 102, 235);
   --accent-color: #efb76c;
   --accent-color-light: #F4CB63;
@@ -334,7 +335,7 @@ time {
 
 .logo {
   background: #fff;
-  border: 1px solid #dbdbdb;
+  border: 1px solid var(--border-light);
   color: #111;
   padding: 10px;
   line-height: 1;
@@ -371,11 +372,24 @@ time {
 .page article {
   background-color: var(--post-bg-light);
   color: var(--post-text-light);
+  border: 1px solid var(--border-light);
 }
 
 .page article .post-content {
   font-family: var(--font-stack-serif);
   font-size: 1.8rem;
+}
+
+.page article h2 {
+  margin: 4rem 0;
+}
+
+.page article figure img {
+  margin: 4rem 0;
+}
+
+.page article figure.cover-image {
+  margin: 0;
 }
 
 .page article p {
@@ -419,6 +433,10 @@ figcaption {
 
 article .post-meta {
   margin-top: 2rem;
+  font-size: 90%;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-stack-mono);
 }
 
 /* Conversation */
@@ -463,12 +481,26 @@ article .post-meta {
   max-width: 100% !important;
 }
 
+.page h1.page-title {
+  margin: 0 0 2rem;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
 /* Post list */
 
 .post-list {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+}
+
+.post-list .post-title {
+  margin: 0 0 2rem;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
 }
 
 /* Text */
@@ -478,22 +510,15 @@ h1 {
   margin-bottom: 2rem;
 }
 
-h2, h3, h4, h5 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-}
-
 h1, h2, h3, h4, h5 {
   font-family: var(--font-stack-sans);
   line-height: 1.4;
-}
-
-h1, .post-list h2 {
-  color: var(--title-color);
+  color: var(--title-color-light);
 }
 
 h2, h3, h4, h5 {
-  color: var(--title-color);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 
 /* Lists */
@@ -513,7 +538,9 @@ article .post-content a {
 }
 
 .post-title a {
-  color: #fff !important;
+  color: #111;
+  font-weight: 700;
+  border-bottom: none;
 }
 
 .post-title time {
@@ -521,11 +548,6 @@ article .post-content a {
 }
 
 /* Post spesifics */
-
-.post article {
-  max-width: 70rem;
-  margin: 0 auto;
-}
 
 .page .post-content {
   width: 90%;
@@ -686,10 +708,21 @@ article blockquote {
   .page article {
     background-color: var(--post-bg-dark);
     color: var(--post-text-dark);
+    border: 1px solid var(--border-dark);
+  }
+
+  .post-title a {
+    color: #fff;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-stack-sans);
+    line-height: 1.4;
+    color: var(--title-color-dark);
   }
 
   .logo {
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-dark);
     color: #fff;
     background: var(--bg-color-dark);
   }
