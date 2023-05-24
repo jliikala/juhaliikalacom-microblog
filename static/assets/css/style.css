@@ -93,7 +93,7 @@
   --title-color-dark: antiquewhite;
   --article-link-color: antiquewhite;
   --border-light: #e8e8e8;
-  --border-dark: #ccc;
+  --border-dark: #373737;
   --article-link-color-light: rgb(102, 102, 235);
   --accent-color: #efb76c;
   --accent-color-light: #F4CB63;
@@ -447,7 +447,6 @@ article .post-meta {
 
 .microblog_conversation::before {
   content: "Conversation";
-  color: var(--title-color);
   font-family: var(--font-stack-sans);
   font-size: 2.2rem;
   margin-bottom: 1rem;
@@ -502,6 +501,10 @@ h2.post-title {
   font-size: 3rem;
   line-height: 1.2;
   font-weight: 700;
+}
+
+.post-list .post-title a {
+  color: var(--title-color-light);
 }
 
 /* Text */
@@ -755,6 +758,7 @@ article blockquote {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--bg-color-dark);
+    color: var(--post-text-dark);
   }
   .page article {
     background-color: var(--post-bg-dark);
@@ -764,6 +768,10 @@ article blockquote {
 
   .post-title a {
     color: #fff;
+  }
+
+  .post-list .post-title a {
+    color: var(--title-color-dark);
   }
 
   h1, h2, h3, h4, h5 {
