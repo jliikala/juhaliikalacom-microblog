@@ -9,7 +9,12 @@
       {{- .Site.Title -}}
       {{- if and .Title (ne .Title .Site.Title) }}
       - {{ .Title }}
+      {{ else }}
+        {{ .Date.Format "Jan 2, 2006" }}
       {{- end -}}
+      {{ if .IsHome }}
+      - Adventures in Web, Life and Travelling To Places Near And Far
+      {{ end }}
     {{- end -}}
   </title>
 
