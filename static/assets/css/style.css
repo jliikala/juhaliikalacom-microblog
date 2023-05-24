@@ -502,8 +502,7 @@ h2.post-title {
 
 .post-list .post-title {
   margin-bottom: 2rem;
-  font-size: 3rem;
-  line-height: 1.2;
+  font-size: 2.7rem;
   font-weight: 700;
 }
 
@@ -674,6 +673,10 @@ article blockquote {
 
 .subscribe-promise {
   font-size: 18px;
+}
+
+.side-subscribe-block .subscribe-form input {
+  width: 100%;
 }
 
 .archive-categories ul {
