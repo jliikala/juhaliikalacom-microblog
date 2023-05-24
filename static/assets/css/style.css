@@ -381,6 +381,10 @@ time {
   font-size: 1.8rem;
 }
 
+article.featured .post-content img:first-of-type{
+  display: none;
+}
+
 article figure img {
   margin: 4rem 0;
 }
