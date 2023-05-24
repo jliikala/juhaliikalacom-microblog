@@ -679,6 +679,10 @@ article blockquote {
   width: 100%;
 }
 
+.side-subscribe-block .subscribe-promise {
+  font-size: 90%;
+}
+
 .archive-categories ul {
   list-style: none;
   display: flex;
