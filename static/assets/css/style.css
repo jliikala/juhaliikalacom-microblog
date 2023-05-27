@@ -766,7 +766,7 @@ article blockquote {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--bg-color-dark);
     color: var(--post-text-dark);
@@ -823,4 +823,4 @@ article blockquote {
     border: 1px solid var(--border-dark);
   }
 
-}
+} */
