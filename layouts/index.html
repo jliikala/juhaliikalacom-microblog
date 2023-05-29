@@ -8,7 +8,7 @@
     {{ $list := $paginator.Pages }}
       {{ if .Site.Taxonomies.categories.featured }}
         {{ range first 1 .Site.Taxonomies.categories.featured }}
-          {{ partial "featured-post-item.html" . }}
+          {{ partial "post-item.html" . }}
         {{ end }}
       {{ end }}
       {{ range $list  }}

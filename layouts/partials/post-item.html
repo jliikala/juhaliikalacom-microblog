@@ -1,5 +1,5 @@
-<article>
-  {{ if .Title }}
+<article class="{{ if not .Params.microblog }}full-post{{ end }}">
+  {{ if not .Params.microblog}}
   <a class="cover-link" href="{{ .Permalink }}">
     {{- with $.Params.images -}}
       <figure class="cover-image">

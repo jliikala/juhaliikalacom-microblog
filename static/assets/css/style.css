@@ -1,44 +1,3 @@
-/* source-serif-pro-regular - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Source Serif Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/assets/fonts/source-serif-pro-v15-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/source-serif-pro-v15-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* source-serif-pro-italic - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Source Serif Pro';
-  font-style: italic;
-  font-weight: 400;
-  src: url('/assets/fonts/source-serif-pro-v15-latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/source-serif-pro-v15-latin-italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* source-serif-pro-700 - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Source Serif Pro';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/assets/fonts/source-serif-pro-v15-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/source-serif-pro-v15-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* source-serif-pro-700italic - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Source Serif Pro';
-  font-style: italic;
-  font-weight: 700;
-  src: url('/assets/fonts/source-serif-pro-v15-latin-700italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('/assets/fonts/source-serif-pro-v15-latin-700italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-
 @font-face {
   font-family: "iA Writer Mono";
   font-weight: normal;
@@ -80,27 +39,21 @@
 }
 
 :root {
-  --bg-color-dark: #060C12;
   --bg-color-light: #F5F5F5;
   --post-bg-light: #fff;
-  --post-bg-dark: #1c1c1c;
   --post-text-light: #111;
-  --post-text-dark: #cdcdcd;
   --text-color: rgba(255, 255, 255, 0.80);
   --text-color-light: #111;
   --title-color: #fff;
   --title-color-light: #111;
-  --title-color-dark: antiquewhite;
   --article-link-color: antiquewhite;
   --border-light: #e8e8e8;
-  --border-dark: #373737;
   --article-link-color-light: rgb(102, 102, 235);
   --accent-color: #efb76c;
   --accent-color-light: #F4CB63;
   --accent-color-red: #ca2017;
   --font-stack-mono: "iA Writer Mono", monospace;
   --font-stack-sans: "Avenir Next", Avenir, "-apple-system", Helvetica, Arial, sans-serif;
-  --font-stack-serif: "Source Serif Pro", Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 a,
@@ -377,11 +330,10 @@ time {
 }
 
 .page article .post-content {
-  font-family: var(--font-stack-serif);
   font-size: 1.8rem;
 }
 
-article.featured .post-content img:first-of-type{
+article.full-post .post-content img:first-of-type {
   display: none;
 }
 
@@ -393,9 +345,17 @@ article figure.cover-image img {
   margin: 0;
 }
 
+article ul li {
+  margin-bottom: 1rem
+}
+
 .page article p {
   font-size: 2rem;
   line-height: 3.2rem;
+}
+
+.link {
+  color: var(--accent-color-red) !important;
 }
 
 .home .side {
@@ -637,7 +597,6 @@ article blockquote {
   background-color: transparent;
   border: none;
   display: block;
-  font-family: playfair display,serif;
   font-size: 1.25em;
   font-weight: 400;
   line-height: 1.4;
@@ -765,62 +724,3 @@ article blockquote {
     gap: 5rem;
   }
 }
-
-/* @media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--bg-color-dark);
-    color: var(--post-text-dark);
-  }
-  .page article {
-    background-color: var(--post-bg-dark);
-    color: var(--post-text-dark);
-    border: 1px solid var(--border-dark);
-  }
-
-  .post-title a {
-    color: #fff;
-  }
-
-  .post-list .post-title a {
-    color: var(--title-color-dark);
-  }
-
-  h1, h2, h3, h4, h5 {
-    font-family: var(--font-stack-sans);
-    line-height: 1.4;
-    color: var(--title-color-dark);
-  }
-
-  .logo {
-    border: 1px solid var(--border-dark);
-    color: #fff;
-    background: var(--bg-color-dark);
-  }
-
-  .logo:visited, .logo:active {
-    color: #fff;
-  }
-
-  .logo:hover {
-    background: white;
-    border-color: white;
-    color: black;
-  }
-
-  .side svg {
-    stroke: rgba(255, 255, 255, 0.80);
-  }
-
-  .side {
-    color: var(--post-text-dark);
-  }
-
-  .subscribe-form input[type="text"] {
-    border: 1px solid var(--border-dark);
-  }
-
-  .subscribe-form input[type="submit"] {
-    border: 1px solid var(--border-dark);
-  }
-
-} */
