@@ -330,7 +330,7 @@ time {
 }
 
 .page article .post-content {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 article.full-post .post-content img:first-of-type {
@@ -350,7 +350,7 @@ article ul li {
 }
 
 .page article p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 3.2rem;
 }
 
@@ -703,10 +703,6 @@ article blockquote {
 
   .wrapper {
     padding: 3rem 0rem;
-  }
-
-  .page article p {
-    font-size: 1.8rem;
   }
 }
 
